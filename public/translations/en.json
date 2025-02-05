@@ -1,0 +1,11 @@
+{
+  "homepage": {
+    "title": "Experts in Rentals!",
+    "description": "The rental agent with extensive experience in renting out real estate in Indonesia. We are here to assist you in finding your dream home, whether you're looking to rent or rent out your property.",
+    "view_offers": "View Housing Offers",
+    "rent_out": "Rent Out Property"
+  },
+  "footer": {
+    "copyright": "© {{year}} Urban Huis. All rights reserved."
+  }
+}

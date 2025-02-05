@@ -1,0 +1,11 @@
+{
+  "homepage": {
+    "title": "Ahli dalam Sewa Properti!",
+    "description": "Agen properti dengan pengalaman luas dalam menyewakan real estat di Indonesia. Kami di sini untuk membantu Anda menemukan rumah impian, baik Anda ingin menyewa maupun menyewakan properti Anda.",
+    "view_offers": "Lihat Penawaran Kos",
+    "rent_out": "Sewakan Properti"
+  },
+  "footer": {
+    "copyright": "© {{year}} Urban Huis. Hak cipta dilindungi undang-undang."
+  }
+}
