@@ -44,6 +44,32 @@ export const metadata: Metadata = {
 export default async function Page() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Urban Huis",
+            url: "https://www.urbanhuis.com",
+            logo: "https://www.urbanhuis.com/assets/UrbanHuiseLogo.jpg",
+            contactPoint: [
+              {
+                "@type": "ContactPoint",
+                telephone: "+62-812-3456-7890",
+                contactType: "Customer Service",
+                areaServed: "ID",
+                availableLanguage: ["Indonesian", "English"],
+              },
+            ],
+            sameAs: [
+              "https://www.instagram.com/urbanhuis",
+              "https://www.facebook.com/urbanhuis",
+            ],
+          }),
+        }}
+      />
+
       <HomePage />
       <SearchBar />
       <HowDoesItWork />

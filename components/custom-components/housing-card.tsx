@@ -14,8 +14,10 @@ import {
   CardHeader,
   CardTitle,
 } from "../ui/card";
+import { useRouter } from "next/navigation";
 
 export type Property = {
+  id: number;
   image: StaticImageData;
   title: string;
   price: string;
@@ -32,12 +34,14 @@ export default function PropertyCard({
 }: {
   property: Array<Property>;
 }) {
+  const router = useRouter();
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {property.map((property, index) => (
         <Card
           key={index}
           className="bg-background border border-border rounded-lg shadow-lg"
+          onClick={() => router.push(`/room-details/${property.id}`)}
         >
           <CardHeader className="p-0">
             <Image

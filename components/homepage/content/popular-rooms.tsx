@@ -6,6 +6,7 @@ import React from "react";
 
 const properties: Array<Property> = [
   {
+    id: 1,
     image: Housing,
     title: "Dorm Room 101",
     price: "Rp. 1.500.000",
@@ -17,6 +18,7 @@ const properties: Array<Property> = [
     type: "Dorm room",
   },
   {
+    id: 2,
     image: Housing,
     title: "Dorm Room 102",
     price: "Rp. 1.500.000",
@@ -28,6 +30,7 @@ const properties: Array<Property> = [
     type: "Dorm room",
   },
   {
+    id: 3,
     image: Housing,
     title: "Apartment 103",
     price: "Rp. 1.500.000",
@@ -39,6 +42,7 @@ const properties: Array<Property> = [
     type: "Apartment",
   },
   {
+    id: 4,
     image: Housing,
     title: "Apartment 104",
     price: "Rp. 1.500.000",
@@ -50,6 +54,7 @@ const properties: Array<Property> = [
     type: "Apartment",
   },
   {
+    id: 5,
     image: Housing,
     title: "Studio 105",
     price: "Rp. 1.500.000",
@@ -61,6 +66,7 @@ const properties: Array<Property> = [
     type: "Studio",
   },
   {
+    id: 6,
     image: Housing,
     title: "Studio 106",
     price: "Rp. 1.500.000",
@@ -72,6 +78,7 @@ const properties: Array<Property> = [
     type: "Studio",
   },
   {
+    id: 7,
     image: Housing,
     title: "Shared Room 107",
     price: "Rp. 1.500.000",
@@ -83,6 +90,7 @@ const properties: Array<Property> = [
     type: "Shared room",
   },
   {
+    id: 8,
     image: Housing,
     title: "Shared Room 108",
     price: "Rp. 1.500.000",
@@ -94,6 +102,7 @@ const properties: Array<Property> = [
     type: "Shared room",
   },
   {
+    id: 9,
     image: Housing,
     title: "Penthouse 109",
     price: "Rp. 1.500.000",
@@ -105,6 +114,7 @@ const properties: Array<Property> = [
     type: "Penthouse",
   },
   {
+    id: 10,
     image: Housing,
     title: "Penthouse 110",
     price: "Rp. 1.500.000",

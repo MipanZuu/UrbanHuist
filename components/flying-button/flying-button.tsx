@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { Moon, Sun, Globe } from "lucide-react";
 
-export const FlyingButton = () => {
+export default function FlyingButton() {
   const [isOpen, setIsOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
   const [showLanguageOptions, setShowLanguageOptions] = useState(false);
@@ -22,7 +22,7 @@ export const FlyingButton = () => {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 z-50">
+    <div className="fixed bottom-10 right-10 z-50">
       <Button
         className="bg-primary text-white rounded-full p-3 shadow-lg hover:bg-secondary transition"
         onClick={() => setIsOpen(!isOpen)}
@@ -31,7 +31,7 @@ export const FlyingButton = () => {
       </Button>
 
       {isOpen && (
-        <div className="mt-2 bg-background border border-border rounded-lg shadow-lg p-3 space-y-2">
+        <div className="mt-2 bg-background border border-border rounded-lg shadow-lg p-3 space-y-2 relative">
           <Button
             className="w-full flex items-center gap-2 bg-secondary text-foreground hover:bg-primary transition"
             onClick={() => setShowLanguageOptions(!showLanguageOptions)}
@@ -40,7 +40,7 @@ export const FlyingButton = () => {
           </Button>
 
           {showLanguageOptions && (
-            <div className="flex flex-col gap-2 mt-2">
+            <div className="flex flex-col gap-2 absolute right-full mr-2 bg-background border border-border rounded-lg shadow-lg p-2 bottom-2">
               <Button
                 className="bg-accent text-foreground hover:bg-secondary"
                 onClick={() => changeLanguage("en")}
@@ -67,4 +67,4 @@ export const FlyingButton = () => {
       )}
     </div>
   );
-};
+}
